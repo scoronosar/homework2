@@ -1,73 +1,46 @@
-let password = "hateyou";
-let requestPassword = prompt("Введите пароль");
+let i = 0;
 
-if (requestPassword === "Пароль введен верно") {
-    alert("Пароль введен верно")
-}else{
-    alert("Пароль введен неправильно")
+while (i < 2) {
+    console.log("привет");
+    i++;
+};
+
+i = 1;
+
+while (i < 6) {
+    console.log(i);
+    i++;
+};
+
+i = 7;
+
+while (i < 23) {
+    console.log(i);
+    i++;
+};
+
+const obj = {
+    коля: "200",
+    вася: "300",
+    петя: "400"
+};
+for (let key in obj) {
+    console.log(`${key}-зарплата ${obj[key]} долларов`);
+  }
+
+let n = 1000;
+let num = 0
+while (n > 50) {
+    n /= 2; 
+    num += 1;
 }
 
-let c = 8
+console.log(n);
+console.log(num);
 
-if (c > 0 && c < 10) {
-    console.log("Верно")
-}else{
-    console.log("Неверно")
-};
+i = prompt("дата первой пятницы в неделе")
 
-let d = 123;
-let e = 341;
-
-if (d > 100 || e > 100) {
-    console.log("верно")
-}else{
-    console.log("неверно")
-};
-
-let a = "2";
-let b = "3";
-
-alert(Number(a) + Number(b));
-
-let mouthNumber = 12;
-
-switch(mouthNumber){
-    case 1:
-        console.log("зима");
-        break;
-    case 12:
-        console.log("зима");
-        break;
-    case 2:
-        console.log("зима");
-        break;
-    case 3:
-        console.log("весна");
-        break;
-    case 4:
-        console.log("весна");
-        break;
-    case 5:
-        console.log("весна");
-        break;
-    case 6:
-        console.log("лето");
-        break;
-    case 7:
-        console.log("лето");
-        break;
-    case 8:
-        console.log("лето");
-        break;
-    case 9:
-        console.log("осень");
-        break;
-    case 10:
-        console.log("осень");
-        break;
-    case 11:
-        console.log("осень");
-        break;
-    default:
-        console.log("указано неверное число месяца")
+while (i < 32){
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
+    i+=7;
 }
