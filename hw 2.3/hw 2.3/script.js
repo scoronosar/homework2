@@ -1,7 +1,7 @@
 let password = "hateyou";
 let requestPassword = prompt("Введите пароль");
 
-if (requestPassword === "Пароль введен верно") {
+if (requestPassword === "password") {
     alert("Пароль введен верно")
 }else{
     alert("Пароль введен неправильно")
